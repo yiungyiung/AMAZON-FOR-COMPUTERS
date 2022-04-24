@@ -31,7 +31,7 @@ function Itemcard(props) {
           <Divider/>
         </Typography>
         <Typography>
-        Price
+          ${props.price}
         </Typography>
       </CardContent>
       <CardActions >

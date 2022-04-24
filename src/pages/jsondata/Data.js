@@ -21,7 +21,10 @@ const Data={
         "price": 100
     },
     {
-        "name" : "yash5" 
+        "id"  : 5,
+        "name" : "isha", 
+        "type" : "MOBO",
+        "price": 12000
     },
     {
         "name" : "yash6" 

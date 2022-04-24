@@ -25,7 +25,7 @@ function Navbar() {
             variant="h6"
             sx={{ flexGrow: 1 }}
           >
-            PCBUILDER
+            Yashazon
           </Typography>
           <Stack direction="row">
             <Button variant="outlined" color="inherit" href="/">
@@ -34,7 +34,7 @@ function Navbar() {
             <Button variant="outlined" color="inherit" href="/GPU">
               GPU
             </Button>
-            <Button variant="outlined" color="inherit">
+            <Button variant="outlined" color="inherit" href="/MOBO">
               MOBO
             </Button>
           </Stack>

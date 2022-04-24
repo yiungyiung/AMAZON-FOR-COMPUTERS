@@ -3,9 +3,9 @@ import Itemcard from "../components/Itemcard";
 import Data from "./jsondata/Data";
 import { Grid } from "@mui/material";
 import { CartProvider } from "react-use-cart";
-function Gpu() {
+function Mobo() {
   const renderCard = (card, Index) => {
-    if (card.type === "GPU") {
+    if (card.type === "MOBO") {
       return (
         <Grid item sm={6} md={5} lg={4} xl={3} key={card.id}>
           <Itemcard
@@ -26,4 +26,4 @@ function Gpu() {
   );
 }
 
-export default Gpu;
+export default Mobo;

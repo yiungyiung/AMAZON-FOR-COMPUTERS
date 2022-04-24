@@ -7,7 +7,7 @@ function Cpu() {
     if(card.type === "CPU"){
     return (
       <Grid key={card.id} item sm={6} md={5} lg={4} xl={3}>
-        <Itemcard  key={card.id} name={card.name} width="200px" cardo={card} />
+        <Itemcard  key={card.id} name={card.name} width="200px" cardo={card} price={card.price} />
       </Grid>
     );
     }
