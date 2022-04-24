@@ -33,7 +33,6 @@ function Cart(props) {
       > 
         {items.map(renderCard)}
       </Box>
-      
     </>
   );
 }
