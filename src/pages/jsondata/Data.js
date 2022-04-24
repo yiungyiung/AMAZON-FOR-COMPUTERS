@@ -1,19 +1,24 @@
-[
-    {
+const Data={
+    product:[
+    {   "id"  : 1,
        "name" : "yash" ,
-       "type" : "CPU"
+       "type" : "CPU",
+       "price": 100
     },
-    {
+    {    "id"  : 2,
         "name" : "yash2",
-        "type" : "GPU" 
+        "type" : "GPU" ,
+        "price": 100
     },
-    {
+    {   "id"  : 3,
         "name" : "yash3",
-        "type" : "CPU"
+        "type" : "CPU",
+        "price": 100
     },
-    {
+    {   "id"  : 4,
         "name" : "yash4", 
-        "type" : "GPU"
+        "type" : "GPU",
+        "price": 100
     },
     {
         "name" : "yash5" 
@@ -57,4 +62,6 @@
      {
          "name" : "tanay" 
      }
-]
+],};
+
+export default Data;

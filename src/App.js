@@ -1,7 +1,6 @@
 import { useState, useEffect, React } from "react";
 import {
   Box,
-  AppBar,
   Grid,
   Typography,
   Toolbar,
@@ -10,11 +9,12 @@ import {
   Divider,
 } from "@mui/material";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+
 import Navbar from "./components/Navbar";
 import Cart from "./components/Cart";
 import Cpu from "./pages/Cpu";
 import Gpu from "./pages/Gpu";
+import {CartProvider} from "react-use-cart";
 
 
 function App() {
@@ -30,20 +30,23 @@ function App() {
   useEffect(() => (window.onresize = updateSize), []);
   return (
     <>
+    <CartProvider>
       <Grid container direction="row" justifyContent="flex-start">
         <Grid item xl={9} lg={9} md={9} sm={8} xs={8}>
+          
           <Navbar />
-
           <Box
             component="main"
             sx={{
               overflow: "auto",
               bgcolor: "transparent",
               color: "white",
-              height: `calc(${size.y}px - 60px)`,
+              height: `calc(${size.y}px - 58px)`,
             }}
           >
+            
             <Toolbar />
+            
             <BrowserRouter>
               <Routes>
                 <Route path="/" element={<Cpu />} />
@@ -51,6 +54,7 @@ function App() {
                 <Route path="/MOBO"/>
               </Routes>
             </BrowserRouter>
+            
             
           </Box>
         </Grid>
@@ -61,27 +65,23 @@ function App() {
               backgroundColor: "white",
             }}
           >
-            <Box style={{ display: "flex", justifyContent: "center" }}>
-              <Toolbar>
-                <ShoppingCartIcon />
-                <h3>CART</h3>
-              </Toolbar>
-            </Box>
-
-            <Divider />
             <Paper
               style={{
-                height: `calc(${size.y}px - 60px)`,
+                height: `calc(${size.y}px)`,
                 overflow: "auto",
                 backgroundColor: "grey",
               }}
-            >
+            > 
+            
               <Cart/>
+            
+              
               
             </Paper>
           </Box>
         </Grid>
       </Grid>
+      </CartProvider>
     </>
   );
 }

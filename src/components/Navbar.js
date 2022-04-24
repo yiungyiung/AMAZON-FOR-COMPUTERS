@@ -16,7 +16,7 @@ function Navbar() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="sticky" elevation={0} variant="outlined">
         <Toolbar>
-          <IconButton aria-labl="" edge="start">
+          <IconButton href="/" edge="start">
             <DeveloperBoardTwoToneIcon />
           </IconButton>
           <Typography

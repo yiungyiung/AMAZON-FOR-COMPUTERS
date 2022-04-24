@@ -13,8 +13,8 @@ import {
 import {useCart} from "react-use-cart";
 
 
-function Itemcard(props) {
-  const {addItem} = useCart();
+function CartItemcard(props) {
+  const {removeItem} = useCart();
   return (
     
     <Box sx={{width: `${props.width}`}} >
@@ -31,15 +31,15 @@ function Itemcard(props) {
           <Divider/>
         </Typography>
         <Typography>
-        Price
+        quantity:{props.quantity}
         </Typography>
       </CardContent>
       <CardActions >
-        <Button onClick={() => addItem(props.cardo,1)} size="medium">Add to Cart</Button>
+        <Button onClick={() => removeItem(props.cardid)} size="medium">Remove</Button>
       </CardActions>
     </Card>
     </Box>
   );
 }
 
-export default Itemcard;
+export default CartItemcard;
