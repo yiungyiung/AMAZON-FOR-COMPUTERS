@@ -14,7 +14,7 @@ import {useCart} from "react-use-cart";
 
 
 function CartItemcard(props) {
-  const {removeItem} = useCart();
+  const {removeItem,updateItemQuantity} = useCart();
   return (
     
     <Box sx={{width: `${props.width}`}} >
@@ -31,7 +31,9 @@ function CartItemcard(props) {
           <Divider/>
         </Typography>
         <Typography>
-        quantity:{props.quantity}
+        <Button size="small" onClick={() =>updateItemQuantity(props.cardid,props.quantity-1)}>-</Button>
+        {props.quantity}
+        <Button size="small" onClick={() =>updateItemQuantity(props.cardid,props.quantity+1)}>+</Button>
         </Typography>
       </CardContent>
       <CardActions >
