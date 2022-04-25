@@ -22,7 +22,7 @@ const Data={
     },
     {
         "id"  : 5,
-        "name" : "isha", 
+        "name" : "yashy", 
         "type" : "MOBO",
         "price": 12000
     },
