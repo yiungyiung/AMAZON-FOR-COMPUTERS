@@ -22,7 +22,7 @@ function CartItemcard(props) {
       <CardMedia
         component="img"
         height="auto"
-        image={require("../assests/images/gmaillogo.png")}
+        image={props.image}
         alt="green iguana"
       />
       <CardContent sx={{flex: '1 0 auto',justifyContent: 'center'}}>

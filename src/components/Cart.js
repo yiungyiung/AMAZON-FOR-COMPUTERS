@@ -17,15 +17,16 @@ function Cart(props) {
   const renderCard = (card, Index) => {
     return (
       <>
-      <CartItemcard
-        key={card.id}
-        name={card.name}
-        cardid={card.id}
-        quantity={card.quantity}
-        width="170px"
-      />
-      <Toolbar/>
-      <Divider/>
+        <CartItemcard
+          key={card.id}
+          name={card.name}
+          cardid={card.id}
+          quantity={card.quantity}
+          width="170px"
+          image={card.img}
+        />
+        <Toolbar />
+        <Divider />
       </>
     );
   };
@@ -35,8 +36,7 @@ function Cart(props) {
         <Toolbar>
           <ShoppingCartIcon />
           <h3>
-            {" "}
-            CART-{totalItems}-${cartTotal}{" "}
+            CART-{totalItems}-${cartTotal}
           </h3>
         </Toolbar>
       </Box>

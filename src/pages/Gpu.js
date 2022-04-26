@@ -15,6 +15,7 @@ function Gpu() {
             width="200px"
             cardo={card}
             price={card.price}
+            img={card.img}
           />
         </Grid>
       );
