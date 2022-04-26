@@ -3,6 +3,7 @@ import Itemcard from "../components/Itemcard";
 import Data from "./jsondata/Data";
 import { Grid } from "@mui/material";
 import { CartProvider } from "react-use-cart";
+
 function Gpu() {
   const renderCard = (card, Index) => {
     if (card.type === "GPU") {
@@ -21,6 +22,7 @@ function Gpu() {
   };
   return (
     <Grid container justifyContent="space-evenly" spacing={4}>
+      
       {Data.product.map(renderCard)}
     </Grid>
   );
