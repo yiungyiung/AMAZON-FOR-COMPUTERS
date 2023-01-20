@@ -1279,6 +1279,14 @@ const Data = {
             id: 161,
             type: "MOBO",
         },
+        {
+            name: "tanoyahssasdadw",
+            price: 6969696,
+            img: "https://cdna.pcpartpicker.com/static/forever/images/product/e2424c4cee2b26ab9066cbcc7e236766.256p.jpg",
+            img_url: "https://pcpartpicker.com/product/Wkwkcf/gigabyte-trx40-aorus-xtreme-xl-atx-strx4-motherboard-trx40-aorus-xtreme",
+            id: 162,
+            type: "MOBO",
+        },
     ],
 };
 
