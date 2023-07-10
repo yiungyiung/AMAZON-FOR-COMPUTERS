@@ -45,7 +45,7 @@ function App() {
             >
               <Toolbar />
 
-              <BrowserRouter>
+              <BrowserRouter basename="/">
                 <Routes>
                   <Route path="/" element={<Cpu />} />
                   <Route path="/GPU" element={<Gpu />} />
