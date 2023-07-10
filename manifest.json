@@ -22,6 +22,7 @@
     "theme_color": "#000000",
     "background_color": "#ffffff",
     "web_accessible_resources": [
-        "src/**"
+        "js/*.js",
+        "css/*.css"
     ]
 }
