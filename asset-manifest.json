@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/AMAZON-FOR-COMPUTERS/static/css/main.1aad6758.css",
-    "main.js": "/AMAZON-FOR-COMPUTERS/static/js/main.75102631.js",
+    "main.js": "/AMAZON-FOR-COMPUTERS/static/js/main.fb564b0e.js",
     "static/media/bg.png": "/AMAZON-FOR-COMPUTERS/static/media/bg.ab232b59671aade11620.png",
     "index.html": "/AMAZON-FOR-COMPUTERS/index.html",
     "main.1aad6758.css.map": "/AMAZON-FOR-COMPUTERS/static/css/main.1aad6758.css.map",
-    "main.75102631.js.map": "/AMAZON-FOR-COMPUTERS/static/js/main.75102631.js.map"
+    "main.fb564b0e.js.map": "/AMAZON-FOR-COMPUTERS/static/js/main.fb564b0e.js.map"
   },
   "entrypoints": [
     "static/css/main.1aad6758.css",
-    "static/js/main.75102631.js"
+    "static/js/main.fb564b0e.js"
   ]
 }
